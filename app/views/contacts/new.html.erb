@@ -1,0 +1,24 @@
+<div class="row">
+  <h2 class="text-center">Contact Us</h2>
+  <div class="col-md-4 col-md-offset-4">
+    <div class="well">
+      <%= form_for @contact do |f| %>
+          <div class="form-group">
+            <%= f.label :name %> <i class="fa fa-user"></i>
+            <%= f.text_field :name, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email %> <i class="fa fa-envelope-square"></i>
+            <%= f.email_field :email, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.label :comments %> <i class="fa fa-comment"></i>
+            <%= f.text_area :comments, class: "form-control" %>
+          </div>
+          <div class="actions">
+            <%= f.submit "Submit", class: "btn btn-primary" %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
